@@ -113,12 +113,13 @@ function App() {
       if (resConfig.ok) {
         const dataConfig = await resConfig.json();
         setConfigTienda({
-          nombreTienda: dataConfig.nombreTienda || "TechStore",
+          nombreTienda: dataConfig.nombreTienda || "Mi Tienda Virtual",
           mensajeBanner:
-            dataConfig.mensajeBanner || "HASTA 30% OFF EN TODA LA TIENDA",
+            dataConfig.mensajeBanner ||
+            "¡Bienvenido a nuestra Tienda en Línea!",
           descripcionBanner:
             dataConfig.descripcionBanner ||
-            "Lleva los mejores accesorios al mejor precio.",
+            "Personaliza este banner desde tu panel de administración en la sección Mi Tienda Web.",
           correoTienda: dataConfig.correoTienda || "",
           whatsappTienda: dataConfig.whatsappTienda || "",
           politicaReembolso: dataConfig.politicaReembolso || "",
